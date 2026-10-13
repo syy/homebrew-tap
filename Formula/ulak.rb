@@ -1,25 +1,25 @@
 class Ulak < Formula
   desc "Run Docker workloads on your own server while you edit locally"
   homepage "https://github.com/syy/ulak"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/syy/ulak/releases/download/v0.1.0/ulak-aarch64-apple-darwin.tar.xz"
-      sha256 "c974dfdfb680ee77128b2e1e2739758ddf42b542d5ebec8d5eacd44769a7e8e7"
+      url "https://github.com/syy/ulak/releases/download/v0.2.0/ulak-aarch64-apple-darwin.tar.xz"
+      sha256 "0184f5b89289fa10fb55236e6dcbaad7909968d3d8835efd59e6fb8a16689855"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/syy/ulak/releases/download/v0.1.0/ulak-x86_64-apple-darwin.tar.xz"
-      sha256 "de1b0d8b2f0927e241d91606c0433d328a1215f418d9e4b7b0148d42d9ea0a3d"
+      url "https://github.com/syy/ulak/releases/download/v0.2.0/ulak-x86_64-apple-darwin.tar.xz"
+      sha256 "aeb7d53a160b14563007e2e2f5d42a954285f51d7a29e4d91cec7d26188e3179"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/syy/ulak/releases/download/v0.1.0/ulak-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "156f3363c40ca5bad22545261fe43c01f29ca287d144a17f6396e567c7198e15"
+      url "https://github.com/syy/ulak/releases/download/v0.2.0/ulak-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "2d94e7245a7716aa8ae324c6a39511ef6029b163f56c8e8ceb37c97b668055d6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/syy/ulak/releases/download/v0.1.0/ulak-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "612ac3f54bd8863b6e1d8611e4e6eb08925761ee051987dd56453e556abac017"
+      url "https://github.com/syy/ulak/releases/download/v0.2.0/ulak-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "f9836994d5e2e21395a3bc1ba5e37ac66372804aae9a8b05bbf53721ce530b08"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
